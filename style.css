@@ -1,0 +1,33 @@
+body {
+    background-color: gray;
+    background-size: auto 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100vh;
+}
+
+.h2,
+.h1{
+    color: black;
+    text-align: center;
+}
+
+.menu{
+    background-color: whitesmoke;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
