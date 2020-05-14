@@ -1,18 +1,64 @@
-body {
-    background-color: gray;
-    background-size: auto 100vh;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    height: 100vh;
+/*reset do css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.h2,
+body {
+    background-image: url("por-do-sol-rio-pinheiros-2019.jpg");
+    background-size: auto 100vh;
+    font-family: 'Baloo 2', cursive;
+    height: 100vh;
+    font-size: 10px;
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: cover;
+    margin: 5px;
+    background-color: #ffffff;
+    /*border: 1px solid rgb(48, 25, 25);*/
+    opacity: 0.9;
+}
+
+/*se a tela tiver pelo menos 400px vai carregar os estilos */
+@media(min-width: 400px){
+    body{
+        font-size: 14px;
+    }
+}
+
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .h1{
-    color: black;
+    color: #E6E6FA;
     text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 4em;
+    line-height: 1.8em;
+}
+
+.h2{
+    color: #E6E6FA;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2em;
 }
 
 .menu{
     background-color: whitesmoke;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+
+.menu a{  
+    display: block;
+    padding: 10px 20px;
 }
 
 .menu ul{
@@ -29,5 +75,61 @@ a{
 }
 
 a:hover{
-    text-decoration: underline;
+    /*text-decoration: underline;*/
+    box-shadow: 10px 5px 5px 0px rebeccapurple;
+}
+
+/*.bio{
+    margin: 20px;
+    border: 3px solid blueviolet;
+    padding: 11px;
+    height: 100px;
+    width: 100px;
+    box-shadow: 100px 0px 0px 0px forestgreen,0px 100px red,100px 100px yellow,0px 200px pink;
+    box-sizing: border-box;
+}*/
+
+.projetos{
+    /*background-image: url("por-do-sol-rio-pinheiros-2019.jpg");*/
+    background-size: auto 100vh;
+    padding: 2em;
+    margin: 5px;
+    height: 100vh;
+    color:black;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    text-align: center;
+    font-size: 2em;
+}
+
+.projetos .grid{
+    display: grid;
+    gap: 2em;
+}
+
+@media (min-width: 610px){
+    .projetos .grid{
+        grid-template-columns: repeat(2, 300px);
+        justify-content: center;
+    }
+}
+
+@media (min-width: 980px){
+    .projetos .grid{
+        grid-template-columns: repeat(3, 300px);
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+.projetos figure{
+    text-align: center;
+}
+
+.img-projetos{
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
 }
