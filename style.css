@@ -6,8 +6,8 @@
 }
 
 body {
-    background-image: url("fundo.jpg");
-    /*background-color: #251b23;*/
+    /*background-image: url("fundo.jpg");*/
+    background-color: #000000;
     background-size: auto 100vh;
     font-family: 'Baloo 2', cursive;
     height: 100vh;
@@ -30,6 +30,20 @@ header{
     align-items: center;
 }
 
+/*
+.titulo{
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+    animation: linear 2s animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo{
+    100%{
+        transform: scale(1) translateY(50vh);
+        opacity: 1;
+    }
+}
+*/
 .h1{
     color: #E6E6FA;
     text-align: center;
@@ -46,7 +60,7 @@ header{
 }
 
 .menu{
-    background-color: whitesmoke;
+    background-color:brown;
     position: fixed;
     width: 100vw;
     top: 0;
@@ -55,6 +69,13 @@ header{
 .menu a{  
     display: block;
     padding: 10px 20px;
+    transition: background-color 1s, color 1s;
+}
+
+.menu a:active,
+.menu a:hover {
+  background-color: whitesmoke;
+  color: #000000;  
 }
 
 .menu ul{
@@ -67,14 +88,15 @@ header{
 }
 
 a{
-    color: brown;
+    color: #000000;
     text-decoration: none;
+    font-size: 2em;
 }
 
-a:hover{
+/*a:hover{
     /*text-decoration: underline;*/
-    box-shadow: 10px 5px 5px 0px rebeccapurple;
-}
+   /* box-shadow: 10px 5px 5px 0px rebeccapurple;*/
+
 
 /*.bio{
     margin: 20px;
@@ -86,6 +108,7 @@ a:hover{
     box-sizing: border-box;
 }*/
 
+.contato,
 .projetos{
     /*background-image: url("por-do-sol-rio-pinheiros-2019.jpg");*/
     /*background-size: auto 100vh;*/
@@ -100,10 +123,12 @@ a:hover{
     font-size: 2em;*/
 }
 
+.contato h2,
 .projetos h2{
     color: whitesmoke;
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
     font-size: 2em;
+    line-height: 7em;
 }
 
 .projetos .grid{
@@ -134,4 +159,25 @@ a:hover{
     width: 240px;
     object-fit: cover;
     object-position: left bottom;
+    transition: transform 500ms;
+}
+
+.img-projetos:hover {
+    transform: scale(1.2) rotate(45deg);
+}
+
+.contato a {
+    color:whitesmoke;
+    font-size: 10em;
+    transition: text-shadow 5s;
+}
+
+.contato .grid{
+    text-align: center;
+}
+
+.contato a:active,
+.contato a:hover{
+    text-decoration: none;
+    text-shadow: 7px 7px 7px brown;
 }

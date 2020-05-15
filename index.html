@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Indie+Flower&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6d83db76e6.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="interacao.js"></script>
     </head>
     <body>
@@ -13,16 +14,16 @@
             <nav class="menu">
                 <ul>
                     <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
-            <div>
+            <div class="titulo">
                 <h1 class="h1">Gabriela Abreu</h1>
                 <h2 class="h2">Analista de Qualidade de Software Pleno</h2>
             </div>
         </header>
-        <section class="projetos">
+        <section class="projetos" id="projetos">
             <h2>Projetos</h2>
             <div class="grid">
                 <figure>
@@ -39,6 +40,20 @@
                 </figure>
             </div>
         </section>
-        <button type="button" onclick="clicou()">Clique aqui</button>
+        <section class="contato" id="contato">
+            <h2>Contato</h2>
+
+            <div class="grid icons">
+                <a target="_blank" href="https://www.linkedin.com/in/gabrielaabreudearaujo">
+                    <i class="fab fa-linkedin-in"></i>
+                <a target="_blank" href="https://github.com/gabsabreu">
+                    <i class="fab fa-github"></i>
+                <a target="_blank" href="https://twitter.com/gaabs_hb">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+
+        </section>
+        <!--<button type="button" onclick="clicou()">Clique aqui</button> -->
     </body>
 </html>
